@@ -23,5 +23,3 @@ input_df = pd.DataFrame([[cylinders, displacement, horsepower,
 if st.button('Predict MPG'):
     prediction = model.predict(input_df)[0]
     st.success(f'Predicted MPG: {prediction:.2f}')
-
-```
