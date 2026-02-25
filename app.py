@@ -1,5 +1,3 @@
-### Streamlit app.py code. Copy and pase into a notepad file and save in the project folder.
-```python
 # app.py
 import streamlit as st
 import pandas as pd
@@ -25,4 +23,5 @@ input_df = pd.DataFrame([[cylinders, displacement, horsepower,
 if st.button('Predict MPG'):
     prediction = model.predict(input_df)[0]
     st.success(f'Predicted MPG: {prediction:.2f}')
+
 ```
