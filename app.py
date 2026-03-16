@@ -1,25 +1,18 @@
-# app.py
 import streamlit as st
-import pandas as pd
-import joblib
 
-model = joblib.load('linear_regression_model.pkl')
+st.set_page_config(page_title="Laptop Prediction App", layout="wide")
 
-st.title('Auto MPG Predictor')
+st.title("Laptop Prediction App")
+st.subheader("Project setup in progress")
 
-cylinders    = st.slider('Cylinders', 3, 8, 4)
-displacement = st.number_input('Displacement', 50.0, 500.0, 150.0)
-horsepower   = st.number_input('Horsepower', 40.0, 250.0, 100.0)
-weight       = st.number_input('Weight', 1500.0, 5000.0, 2500.0)
-acceleration = st.number_input('Acceleration', 8.0, 25.0, 15.0)
-model_year   = st.slider('Model Year', 70, 82, 76)
-origin       = st.selectbox('Origin', [1, 2, 3])
+st.write("""
+This Streamlit app is being developed for the COM763 machine learning project.
 
-input_df = pd.DataFrame([[cylinders, displacement, horsepower,
-                           weight, acceleration, model_year, origin]],
-                         columns=['cylinders','displacement','horsepower',
-                                  'weight','acceleration','model_year','origin'])
+Planned stages:
+1. Data exploration and cleaning
+2. Feature selection and preprocessing
+3. Model training and evaluation
+4. Final prediction interface
+""")
 
-if st.button('Predict MPG'):
-    prediction = model.predict(input_df)[0]
-    st.success(f'Predicted MPG: {prediction:.2f}')
+st.info("The final trained model and prediction form will be added after the notebook-based development stage.")
