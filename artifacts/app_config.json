@@ -1,0 +1,267 @@
+{
+  "target": "price",
+  "selected_model": "MLP_v2_feature_set_b",
+  "features": [
+    "brand",
+    "device_category",
+    "rating",
+    "cpu_brand",
+    "cpu_family",
+    "cpu_series",
+    "cpu_core_count",
+    "cpu_thread_count",
+    "cpu_p_cores",
+    "cpu_e_cores",
+    "ram_gb",
+    "storage_gb",
+    "display_width_px",
+    "display_height_px",
+    "display_size_inch",
+    "gpu_brand",
+    "gpu_series",
+    "gpu_type",
+    "gpu_vram_gb",
+    "os_name",
+    "warranty_years",
+    "total_pixels",
+    "ppi",
+    "threads_per_core",
+    "has_dedicated_gpu",
+    "gpu_vram_missing_flag",
+    "cpu_p_cores_missing_flag",
+    "cpu_e_cores_missing_flag"
+  ],
+  "display_names": {
+    "brand": "Brand",
+    "device_category": "Device Category",
+    "rating": "User Rating",
+    "cpu_brand": "CPU Brand",
+    "cpu_family": "CPU Family",
+    "cpu_series": "CPU Series",
+    "cpu_core_count": "CPU Core Count",
+    "cpu_thread_count": "CPU Thread Count",
+    "cpu_p_cores": "CPU P-Cores",
+    "cpu_e_cores": "CPU E-Cores",
+    "ram_gb": "RAM (GB)",
+    "storage_gb": "Storage (GB)",
+    "display_width_px": "Display Width (px)",
+    "display_height_px": "Display Height (px)",
+    "display_size_inch": "Display Size (inch)",
+    "gpu_brand": "GPU Brand",
+    "gpu_series": "GPU Series",
+    "gpu_type": "GPU Type",
+    "gpu_vram_gb": "GPU VRAM (GB)",
+    "os_name": "Operating System",
+    "warranty_years": "Warranty (Years)",
+    "total_pixels": "Total Pixels",
+    "ppi": "Pixels Per Inch",
+    "threads_per_core": "Threads Per Core",
+    "has_dedicated_gpu": "Has Dedicated GPU",
+    "gpu_vram_missing_flag": "GPU VRAM Missing Flag",
+    "cpu_p_cores_missing_flag": "CPU P-Cores Missing Flag",
+    "cpu_e_cores_missing_flag": "CPU E-Cores Missing Flag"
+  },
+  "categorical_options": {
+    "brand": [
+      "acer",
+      "air",
+      "alienware",
+      "apple",
+      "asus",
+      "chuwi",
+      "colorful",
+      "dell",
+      "gigabyte",
+      "hp",
+      "infinix",
+      "lenovo",
+      "microsoft",
+      "motorola",
+      "msi",
+      "samsung",
+      "thomson",
+      "ultimus",
+      "walker"
+    ],
+    "device_category": [
+      "Business",
+      "Convertible",
+      "Gaming",
+      "General",
+      "Thin & Light"
+    ],
+    "cpu_brand": [
+      "AMD",
+      "Apple",
+      "Intel",
+      "Snapdragon"
+    ],
+    "cpu_family": [
+      "Celeron",
+      "Core",
+      "Core 5",
+      "Core Ultra",
+      "M-Series",
+      "Ryzen",
+      "Snapdragon"
+    ],
+    "cpu_series": [
+      "210H",
+      "Celeron",
+      "Core 3",
+      "Core 5",
+      "Core 7",
+      "Core I3",
+      "Core I5",
+      "Core I7",
+      "Core I9",
+      "Core Ultra 5",
+      "Core Ultra 7",
+      "Core Ultra 9",
+      "M3",
+      "M4",
+      "M5",
+      "Ryzen 3",
+      "Ryzen 5",
+      "Ryzen 7",
+      "Ryzen 9",
+      "Ryzen Ai 5",
+      "Ryzen Ai 7",
+      "Ryzen Ai 9",
+      "Ryzen Ai Max",
+      "Snapdragon X"
+    ],
+    "gpu_brand": [
+      "AMD",
+      "Apple",
+      "Intel",
+      "NVIDIA",
+      "Qualcomm"
+    ],
+    "gpu_series": [
+      "Adreno",
+      "Apple GPU",
+      "Arc",
+      "GeForce MX",
+      "GeForce RTX",
+      "HD",
+      "Integrated Graphics",
+      "Iris Xe",
+      "Radeon",
+      "UHD"
+    ],
+    "gpu_type": [
+      "Dedicated",
+      "Integrated"
+    ],
+    "os_name": [
+      "Chrome",
+      "DOS",
+      "Linux",
+      "Mac",
+      "Ubuntu",
+      "Windows"
+    ]
+  },
+  "numeric_ranges": {
+    "rating": {
+      "min": 27.0,
+      "max": 98.0,
+      "median": 59.0
+    },
+    "cpu_core_count": {
+      "min": 2.0,
+      "max": 24.0,
+      "median": 8.0
+    },
+    "cpu_thread_count": {
+      "min": 2.0,
+      "max": 32.0,
+      "median": 12.0
+    },
+    "cpu_p_cores": {
+      "min": 0.0,
+      "max": 10.0,
+      "median": 4.0
+    },
+    "cpu_e_cores": {
+      "min": 0.0,
+      "max": 16.0,
+      "median": 6.0
+    },
+    "ram_gb": {
+      "min": 4.0,
+      "max": 64.0,
+      "median": 16.0
+    },
+    "storage_gb": {
+      "min": 64.0,
+      "max": 6144.0,
+      "median": 512.0
+    },
+    "display_width_px": {
+      "min": 1080.0,
+      "max": 3840.0,
+      "median": 1920.0
+    },
+    "display_height_px": {
+      "min": 720.0,
+      "max": 2400.0,
+      "median": 1080.0
+    },
+    "display_size_inch": {
+      "min": 11.0,
+      "max": 18.0,
+      "median": 15.0
+    },
+    "gpu_vram_gb": {
+      "min": 2.0,
+      "max": 24.0,
+      "median": 6.0
+    },
+    "warranty_years": {
+      "min": 1.0,
+      "max": 3.0,
+      "median": 1.0
+    },
+    "total_pixels": {
+      "min": 983520.0,
+      "max": 9216000.0,
+      "median": 2073600.0
+    },
+    "ppi": {
+      "min": 104.47285665558198,
+      "max": 323.45078167051213,
+      "median": 146.86047800548656
+    },
+    "threads_per_core": {
+      "min": 1.0,
+      "max": 2.0,
+      "median": 1.375
+    },
+    "has_dedicated_gpu": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    "gpu_vram_missing_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    "cpu_p_cores_missing_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    "cpu_e_cores_missing_flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    }
+  },
+  "notes": {
+    "prediction_type": "Laptop price regression",
+    "currency_note": "Predicted price is returned in the dataset currency unit."
+  }
+}

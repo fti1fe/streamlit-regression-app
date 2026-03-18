@@ -1,0 +1,17 @@
+{
+  "selected_model": "MLP_v2_feature_set_b",
+  "reason_short": "Best hold-out test performance after feature refinement.",
+  "benchmark_kept_for_report": "Ridge_feature_set_b",
+  "selection_basis": {
+    "primary": [
+      "test_rmse",
+      "test_mae",
+      "test_r2"
+    ],
+    "secondary": [
+      "cv_rmse_mean",
+      "cv_r2_mean",
+      "deployment suitability"
+    ]
+  }
+}
