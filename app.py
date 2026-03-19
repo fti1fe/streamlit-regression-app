@@ -74,8 +74,8 @@ FLAG_TO_BASE = {
 
 EXPLANATION_TEXT = (
     "The final deployed model is the refined MLP using Feature Set B. "
-    "It was selected because it achieved the strongest hold-out test performance across RMSE, "
-    "MAE and R². Ridge remained an important benchmark with slightly stronger cross-validation "
+    "I selected it because it achieved the strongest test performance across RMSE, "
+    "MAE and R². Ridge remained an important benchmark with slightly stronger cross validation "
     "stability, but the MLP gave the best final predictive accuracy on unseen test data."
 )
 
@@ -402,7 +402,7 @@ def render_performance_tab(cfg: dict[str, Any]) -> None:
 
 def main() -> None:
     st.title("Laptop Price Prediction App")
-    st.caption("COM763 - Advanced Machine Learning portfolio project")
+    st.caption("COM763 Advanced Machine Learning portfolio project")
 
     try:
         cfg = load_config()
