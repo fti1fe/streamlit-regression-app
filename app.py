@@ -19,14 +19,17 @@ BASE_DIR = Path(__file__).resolve().parent
 PLOT_CANDIDATES = {
     "Price Distribution": [
         "outputs/figures/price_distribution.png",
+        "notebooks/outputs/figures/price_distribution.png",
         "price_distribution.png",
     ],
     "Price by Brand": [
         "outputs/figures/price_by_brand.png",
+        "notebooks/outputs/figures/price_by_brand.png",
         "price_by_brand.png",
     ],
     "RAM vs Price": [
         "outputs/figures/ram_vs_price.png",
+        "notebooks/outputs/figures/ram_vs_price.png",
         "ram_vs_price.png",
     ],
 }
@@ -125,8 +128,9 @@ def load_csv(candidates: list[str]) -> pd.DataFrame | None:
     return pd.read_csv(csv_path)
 
 
-@st.cache_data
 def discover_plot_paths() -> dict[str, Path]:
+    # Do not cache this: plot files can appear after a commit/deploy and stale cache
+    # can keep showing "not found" even when files exist.
     found: dict[str, Path] = {}
     for label, candidates in PLOT_CANDIDATES.items():
         path = resolve_existing_path(candidates)
