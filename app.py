@@ -129,8 +129,6 @@ def load_csv(candidates: list[str]) -> pd.DataFrame | None:
 
 
 def discover_plot_paths() -> dict[str, Path]:
-    # Do not cache this: plot files can appear after a commit/deploy and stale cache
-    # can keep showing "not found" even when files exist.
     found: dict[str, Path] = {}
     for label, candidates in PLOT_CANDIDATES.items():
         path = resolve_existing_path(candidates)
